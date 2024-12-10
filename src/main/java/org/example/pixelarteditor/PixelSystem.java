@@ -1,4 +1,14 @@
 package org.example.pixelarteditor;
 
-public class PixelSystem {
+class PixelSystem {
+  private final StatusWindow statusWindow;
+
+  PixelSystem(StatusWindow statusWindow) {
+    this.statusWindow = statusWindow;
+  }
+
+  public boolean togglePixel() {
+    return statusWindow.togglePixel();
+  }
 }
+

@@ -1,4 +1,5 @@
 package org.example.pixelarteditor;
 
-public class Command {
+public interface Command {
+  boolean execute();
 }
